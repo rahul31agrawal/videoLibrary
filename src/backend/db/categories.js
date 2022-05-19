@@ -13,6 +13,7 @@ export const categories = [
       "It has comedy videos",
       views:6,
       duration: "1:30",
+      yId:"9YSbflKeOZQ",
   },
   {
     _id: uuid(),
@@ -21,6 +22,7 @@ export const categories = [
       "It has Front-end web development videos",
       views:7,
       duration: "3:45",
+      yId:"bpSbzor0Jfw",
 
   },
   {
@@ -30,6 +32,7 @@ export const categories = [
       "It has Hollywood movies",
       views:8,
       duration: "2:40",
+      yId:"aWzlQ2N6qqg",
   },
   {
     _id: uuid(),
@@ -38,5 +41,6 @@ export const categories = [
       "It has bollywood movies",
       views:9,
       duration: "1:15",
+      yId:"HIbzXaBdwZw",
   },
 ];
