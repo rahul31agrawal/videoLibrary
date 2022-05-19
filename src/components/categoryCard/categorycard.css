@@ -1,0 +1,26 @@
+.cardContainer{
+  
+    width:20rem;
+    height:18.5rem;
+  }
+  
+  .imageContainer img{
+    height:12rem;
+    width:20rem;
+    
+  }
+  
+  .videoDetails{
+    display: flex;
+    margin-top:-2rem;
+  }
+  
+  .watchNowBtn{
+    height:2rem;
+    width:20rem;
+    margin-top:-3rem;
+  }
+  
+  .categoryName{
+    margin-top:.5rem;
+  }
