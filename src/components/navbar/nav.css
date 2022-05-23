@@ -1,0 +1,36 @@
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #313131;
+    width: 100%;
+    position: fixed;
+    
+    
+}
+
+.logoName{
+    color: #32a8a2;
+    margin-left: .5rem;
+}
+
+.loginBtn{
+    margin:1.5rem 1rem 1.5rem;
+    border-radius: .5rem;
+    width:5rem;
+}
+
+.searchBarContainer{
+    margin:2rem ;
+}
+
+.SearchBar{
+    width: 30rem;
+    height: 2rem;
+    border-radius: .5rem;
+}
+
+.SearchBtn{
+    height: 2.5rem;
+    width: 2.8rem;
+    border-radius: .5rem;
+}

@@ -1,0 +1,21 @@
+.bannerImg img{
+    margin: 7rem 2rem 2rem 2rem;
+    height: 450px;
+    width: 1250px;
+}
+
+.categoryHeading{
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.categoryCardContainer{
+    display: flex;
+    gap: 2rem;
+    margin-top: -.5rem;
+
+}
+
+.categoryHeading{
+    margin-top: -2rem;
+}
