@@ -1,5 +1,8 @@
+import { useNavigate } from "react-router";
 
 const Navbar = () => {
+
+    const navigate = useNavigate();
     return(
         <div className = "navContainer">
 
@@ -10,7 +13,7 @@ const Navbar = () => {
             <button className="SearchBtn"><i class="fas fa-search"></i></button>
         </div>
 
-
+        <button className="loginBtn" onClick={() => { navigate("/Videos");}}>Explore</button>
         <button className="loginBtn">Login</button>
         </div>
         

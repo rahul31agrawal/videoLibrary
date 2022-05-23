@@ -1,11 +1,15 @@
 import "./App.css";
-// import { Routes, Route } from "react-router";
+import {VideoListing} from "./pages/videoListing/videoListing"
+import { Routes, Route } from "react-router";
 import {Home} from "./pages/homePage/home";
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Videos" element={<VideoListing/>} />
+      </Routes>
     </div>
   );
 }
