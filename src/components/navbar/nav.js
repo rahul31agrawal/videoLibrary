@@ -10,7 +10,7 @@ const Navbar = () => {
 
         <div className="searchBarContainer">
             <input className="SearchBar" placeholder="search Videos"></input>
-            <button className="SearchBtn"><i class="fas fa-search"></i></button>
+            <button className="SearchBtn"><i className="fas fa-search"></i></button>
         </div>
 
         <button className="loginBtn" onClick={() => { navigate("/Videos");}}>Explore</button>

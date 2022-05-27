@@ -1,0 +1,12 @@
+.sidebarHolder{
+    padding-top: 6rem;
+}
+
+.videoGrid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding-left: 12rem;
+    padding-top: 4rem;
+    gap: 4rem;
+}

@@ -24,7 +24,7 @@ export default function Home({ categories }) {
       (error)=>{
         console.log(error);
     })
-},[])
+  },[])
 
 
 

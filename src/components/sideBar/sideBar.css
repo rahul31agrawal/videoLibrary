@@ -1,0 +1,22 @@
+.sideBar{
+    position: fixed;
+    display:Flex;
+    flex-direction:column;
+    color: #32a8a2;
+    background-color: #313131;
+    width:10rem;
+    height:80vh;
+    padding:.5rem;
+  }
+  
+  .sidebarContents{
+    display:Flex;
+    flex-direction:row;
+    gap:1rem;
+    cursor:pointer;
+    
+  }
+  
+  .sideBarText{
+    margin-top:.5rem;
+  }

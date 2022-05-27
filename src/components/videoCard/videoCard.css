@@ -1,0 +1,35 @@
+.videoCardContainer{
+    
+    width:20rem;
+    height:20rem;
+    
+  }
+  
+  .imageContainer img{
+    height:15rem;
+    width:20rem;
+  }
+  
+  .videoTitle{
+    margin-top:-.1rem;
+    
+  
+  }
+  
+  
+  
+  .videoDescription{
+    margin-top:-1rem;
+    display:flex;
+    justify-content:space-around;
+  }
+  
+  .videoContent{
+    margin-top:.5rem;
+    margin-left:-2rem;
+    padding-left: .5rem;
+  }
+  
+  .far{
+    cursor:pointer;
+  }
