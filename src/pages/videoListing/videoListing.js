@@ -17,12 +17,12 @@ const  VideoListing = ({ videos })=> {
         
       },
       (error)=>{
-        // console.log(response.data.videos);
+        console.log(error);
     })
     },[])
 
 
-   console.log(videoItem)
+   
 
     return(
         <>
@@ -33,7 +33,7 @@ const  VideoListing = ({ videos })=> {
        
        <div className="videoGrid">
            
-           {videoItem.map((vid)=><VideoCard {...vid}/>)}
+           {videoItem.map((vid)=><VideoCard {...vid} key={vid._id}/>)}
            
        </div>
         </>
