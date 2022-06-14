@@ -1,9 +1,9 @@
+import { useLikes } from "../../context/LikeContext";
 
+const VideoCard = ({video}) => {
 
-const VideoCard = ({_id,title,views,hoursAgo}) => {
-
-  
-  
+  const {likeState,likeDispatch} = useLikes();
+  const {_id,title,views,hoursAgo} = video;
   
 
     return(
@@ -22,7 +22,18 @@ const VideoCard = ({_id,title,views,hoursAgo}) => {
        <h4 className = "videoContent">{views}K Views | {hoursAgo} hours ago</h4>
         
          <div className = "videoCardIcons">
-           <i className="far fa-thumbs-up fa-2x"></i>
+
+            {
+              likeState.likes.find((vid) => vid._id === _id) ? (
+                <i className="fas fa-thumbs-up fa-2x"
+                onClick={()=>likeDispatch({type:"RemoveLike",payload:video})}></i>
+
+              ) : (
+                <i className="far fa-thumbs-up fa-2x"
+                onClick={()=>likeDispatch({type:"AddLike",payload:video})}></i>
+              )
+            }
+           
            <i  className="far fa-clock fa-2x"></i>
         </div>
       </div>
