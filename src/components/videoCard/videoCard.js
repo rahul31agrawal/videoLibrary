@@ -1,13 +1,16 @@
 import { useLikes } from "../../context/LikeContext";
+import { useNavigate } from "react-router";
+
 
 const VideoCard = ({video}) => {
 
+  const navigate = useNavigate();
   const {likeState,likeDispatch} = useLikes();
   const {_id,title,views,hoursAgo} = video;
   
 
     return(
-        <div className = "videoCardContainer">
+        <div className = "videoCardContainer" onClick={() => { navigate(`/watchVideo/${_id}`)}} >
     
     <div className="imageContainer">
     <img src={`https://i.ytimg.com/vi/${_id}/mqdefault.jpg`} alt = "videoImage"/>
