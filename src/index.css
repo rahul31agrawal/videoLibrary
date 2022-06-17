@@ -4,6 +4,7 @@
 @import "./components/sideBar/sideBar.css";
 @import"./pages/videoListing/videoListing.css";
 @import "./components/videoCard/videoCard.css";
+@import "./pages/watchVideo/watchVideo.css";
 
 body {
   margin: 0;

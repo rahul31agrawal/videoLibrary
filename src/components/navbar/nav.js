@@ -13,8 +13,8 @@ const Navbar = () => {
             <button className="SearchBtn"><i className="fas fa-search"></i></button>
         </div>
 
-        <button className="loginBtn" onClick={() => { navigate("/Videos");}}>Explore</button>
-        <button className="loginBtn">Login</button>
+        <button className="loginBtn" onClick={() => { navigate("/Videos")}}>Explore</button>
+        <button className="loginBtn" onClick={() => { navigate("/")}}>Login</button>
         </div>
         
 

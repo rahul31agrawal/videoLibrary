@@ -5,7 +5,7 @@ const Sidebar = () => {
   return(
     <aside className = "sideBar">
     <div className = "sidebarContents">
-      <i className="fas fa-home fa-2x"></i>
+      <i className="far fa-home fa-2x"></i>
       <h3 className = "sideBarText" onClick={() => { navigate("/")}}>Home</h3>
     </div>
     <div className = "sidebarContents">
@@ -19,6 +19,10 @@ const Sidebar = () => {
     <div className = "sidebarContents">
       <i className="far fa-history fa-2x"></i>
       <h3 className = "sideBarText">History</h3>
+    </div>
+    <div className = "sidebarContents">
+    <i className="far fa-list fa-2x"></i>
+      <h3 className = "sideBarText">Playlist</h3>
     </div>
   </aside>
   )

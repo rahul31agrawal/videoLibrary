@@ -1,0 +1,33 @@
+.watchVideoGrid{
+    display: grid;
+    grid-template-columns: 78% 22%;
+}
+
+.mustWatchVideosContainer{
+    height: 40rem;
+    margin-top: 5rem;
+    width: 14rem;
+    padding-right: 3rem;
+
+    overflow:auto;
+    
+    
+}
+
+.mustWatchVideos{
+cursor: pointer;
+}
+.mustWatchVideosTitle{
+    margin-top: -1.5rem;
+
+}
+
+.mustWatchVideosDesc{
+    margin-top: -1.5rem;  
+}
+
+.watchVideoTitle{
+    margin-top: -10rem;
+}
+
+
