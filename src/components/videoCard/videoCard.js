@@ -1,18 +1,20 @@
 import { useLikes } from "../../context/LikeContext";
 import { useNavigate } from "react-router";
-
+import {useHistory} from "../../context/historyContext"
 
 const VideoCard = ({video}) => {
 
+  const {historyDispatch} = useHistory();
   const navigate = useNavigate();
   const {likeState,likeDispatch} = useLikes();
   const {_id,title,views,hoursAgo} = video;
   
 
     return(
-        <div className = "videoCardContainer" onClick={() => { navigate(`/watchVideo/${_id}`)}} >
+      <div onClick={()=>historyDispatch({type:"Add_To_History",payload:video})}>
+        <div className = "videoCardContainer" onClick={() => { navigate(`/watchVideo/${_id}`) } } >
     
-    <div className="imageContainer">
+    <div className="imageContainer" >
     <img src={`https://i.ytimg.com/vi/${_id}/mqdefault.jpg`} alt = "videoImage"/>
   </div>
 
@@ -40,6 +42,7 @@ const VideoCard = ({video}) => {
            <i  className="far fa-clock fa-2x"></i>
         </div>
       </div>
+  </div>
   </div>
     )
 }

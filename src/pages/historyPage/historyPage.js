@@ -1,17 +1,16 @@
 import {Navbar} from "../../components/navbar/nav";
 import {Sidebar} from "../../components/sideBar/sideBar";
-import {VideoCard} from "../../components/videoCard/videoCard";
-import { useLikes } from "../../context/LikeContext";
+import { HistoryCard } from "../../components/historyCard/HistoryCard";
+import { useHistory } from "../../context/historyContext";
 import { Link } from "react-router-dom";
 
 
-const  LikesPage = ()=> {
+const  HistoryPage = ()=> {
    
-    const {likeState}=useLikes();
     
-   
+   const {historyState} = useHistory();
  
-
+   
    
 
     return(
@@ -23,17 +22,17 @@ const  LikesPage = ()=> {
        
        <div className="videoGrid">
            
-         {
-                 likeState.likes.length > 0 ? (
-             likeState.likes.map((vid)=><VideoCard video = {vid} key={vid._id}/>)
+       {
+                 historyState.history.length > 0 ? (
+             historyState.history.map((vid,index)=><HistoryCard video = {vid} key={index}/>)
              ):(
                 <div className= "page-bottom-title-wishlist">
-                <p>No Videos in likes page</p>
+                <p>No Videos in History page</p>
                 <Link to="/Videos"> watch videos </Link>
             </div>
         )
 
-         }  
+         } 
            
 
        </div>
@@ -43,4 +42,4 @@ const  LikesPage = ()=> {
 
 }
 
-export {LikesPage}  ;
+export {HistoryPage}  ;

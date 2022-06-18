@@ -18,7 +18,7 @@ const Sidebar = () => {
     </div>
     <div className = "sidebarContents">
       <i className="far fa-history fa-2x"></i>
-      <h3 className = "sideBarText">History</h3>
+      <h3 className = "sideBarText" onClick={() => { navigate("/history")}}>History</h3>
     </div>
     <div className = "sidebarContents">
     <i className="far fa-list fa-2x"></i>
