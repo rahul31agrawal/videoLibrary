@@ -5,6 +5,8 @@ import {Home} from "./pages/homePage/home";
 import {LikesPage} from "./pages/likesPage/likesPage";
 import {WatchVideo} from "./pages/watchVideo/watchVideo";
 import {HistoryPage} from "./pages/historyPage/historyPage";
+import {WatchLater} from "./pages/watchLater/watchLater";
+
 function App() {
   return (
     <div className="App">
@@ -14,6 +16,7 @@ function App() {
         <Route path="/likesPage" element={<LikesPage/>} />
         <Route path="/watchVideo/:videoId" element={<WatchVideo/>} />
         <Route path="/history" element={<HistoryPage/>} />
+        <Route path="/watchLater" element={<WatchLater/>} />
       </Routes>
     </div>
   );

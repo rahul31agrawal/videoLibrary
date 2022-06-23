@@ -20,10 +20,17 @@ const Sidebar = () => {
       <i className="far fa-history fa-2x"></i>
       <h3 className = "sideBarText" onClick={() => { navigate("/history")}}>History</h3>
     </div>
+
     <div className = "sidebarContents">
     <i className="far fa-list fa-2x"></i>
       <h3 className = "sideBarText">Playlist</h3>
     </div>
+
+    <div className = "sidebarContents">
+    <i class="far fa-alarm-plus fa-2x"></i>
+      <h3 className = "sideBarText"  onClick={() => { navigate("/watchLater")}}>Watch Later</h3>
+    </div>
+
   </aside>
   )
 
