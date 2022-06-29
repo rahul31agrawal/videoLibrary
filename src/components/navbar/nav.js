@@ -1,8 +1,28 @@
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
+import { useAuthContext } from "../../context/authContext";
 
 const Navbar = () => {
 
     const navigate = useNavigate();
+    const { auth, setAuth } = useAuthContext();
+
+    const logoutFunc = () => {
+        localStorage.removeItem("TOKEN");
+        localStorage.removeItem("USER_INFO");
+    
+        setAuth({
+          loginStatus: false,
+          token: localStorage.getItem("TOKEN"),
+          user: JSON.parse(localStorage.getItem("USER_INFO")),
+        });
+        navigate("/login");
+      };
+
+    
+
+
+
     return(
         <div className = "navContainer">
 
@@ -14,7 +34,21 @@ const Navbar = () => {
         </div>
 
         <button className="loginBtn" onClick={() => { navigate("/Videos")}}>Explore</button>
-        <button className="loginBtn" onClick={() => { navigate("/")}}>Login</button>
+        
+         
+
+         {auth.loginStatus ? (
+        <div className="loginBtn" to="" onClick={() => logoutFunc()}>
+          Logout
+        </div>
+        ) : (
+        <Link className="loginBtn" to="/login">
+          Login
+        </Link>
+        )}
+
+
+
         </div>
         
 
