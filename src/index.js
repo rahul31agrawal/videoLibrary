@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import {LikeProvider} from "./context/LikeContext";
 import {HistoryProvider} from "./context/historyContext";
 import {WatchLaterProvider} from "./context/watchLaterContext";
-
+import {AuthContextProvider} from "./context/authContext";
 
 // Call make Server
 makeServer();
@@ -15,13 +15,15 @@ makeServer();
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <WatchLaterProvider>
-       <LikeProvider>
-        <HistoryProvider>
-          <App />
-        </HistoryProvider>
-       </LikeProvider>
-      </WatchLaterProvider>
+      <AuthContextProvider>
+        <WatchLaterProvider>
+         <LikeProvider>
+           <HistoryProvider>
+             <App />
+            </HistoryProvider>
+          </LikeProvider>
+        </WatchLaterProvider>
+      </AuthContextProvider>
     </Router>
     
   </React.StrictMode>,

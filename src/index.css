@@ -5,6 +5,7 @@
 @import"./pages/videoListing/videoListing.css";
 @import "./components/videoCard/videoCard.css";
 @import "./pages/watchVideo/watchVideo.css";
+@import "./pages/loginPage/login.css";
 
 body {
   margin: 0;

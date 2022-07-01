@@ -1,0 +1,45 @@
+.main-container {
+    
+    height: calc(100vh - 76px);
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F7F7;
+}
+
+
+
+.login-container {
+    
+    width: 30rem;
+    padding: 2rem 4rem;
+    border-radius: 5px;
+    background-color: #F7F7F7;
+    box-shadow: 1px 1px 5px 4px #D1D5DB;
+}
+
+.login-heading{
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.label-position{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+#create-btn{
+    width: 40%;
+    font-weight: bold;
+}
+
+.user-input{
+    margin: .5rem;
+}
+
