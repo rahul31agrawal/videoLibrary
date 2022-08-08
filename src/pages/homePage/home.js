@@ -37,7 +37,7 @@ export default function Home({ categories }) {
         <h1 className="categoryHeading">Category</h1>
         <div className="categoryCardContainer">
         
-        {item.map((obj)=><CategoryCard {...obj}/>)}
+        {item.map((obj,index)=> <div key={index}><CategoryCard {...obj}/></div>)}
 
         </div>
         </>
