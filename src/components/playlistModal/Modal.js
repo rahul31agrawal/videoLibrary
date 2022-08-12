@@ -28,6 +28,7 @@ const Modal = (props) => {
         setplaylistinput("")
         },(error)=>{
         console.log("error from get playlist api",error);
+        toast.error("Please login")
         })
     }
     const addVideoToPlaylist = (playlistobj) =>{
