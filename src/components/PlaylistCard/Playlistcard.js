@@ -23,7 +23,7 @@ const Playlistcard = ({playlist}) => {
       .then((response)=>{
       console.log('response from delete playlist api',response);
       setlocalplaylists(response.data.playlists)
-      toast("Playlist deleted")
+      toast.success("Playlist deleted")
       },(error)=>{
       console.log("error from delete playlist api",error);
       })

@@ -3,7 +3,7 @@ import {Sidebar} from "../../components/sideBar/sideBar";
 import {VideoCard} from "../../components/videoCard/videoCard";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import { ToastContainer} from 'react-toastify';
 import Modal from "../../components/playlistModal/Modal";
 import { usePlaylist } from '../../context/PlaylistContext';
 
@@ -43,6 +43,7 @@ const  VideoListing = ({ videos })=> {
            {videoItem.map((vid)=><VideoCard video = {vid} key={vid._id}/>)}
            
        </div>
+         <ToastContainer />
         </>
     )
 

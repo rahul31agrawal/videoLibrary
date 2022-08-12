@@ -2,6 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import { toast } from 'react-toastify';
 
 import { usePlaylist } from "../../context/PlaylistContext";
 
@@ -22,7 +23,7 @@ const Modal = (props) => {
         axios.post('/api/user/playlists',datatosend,{headers : header})
         .then((response)=>{
         console.log('response from user playlist api',response);
-        alert("Playlist Created")
+        toast.success("Playlist Created")
         setlocalplaylists(response.data.playlists)
         setplaylistinput("")
         },(error)=>{
@@ -36,9 +37,9 @@ const Modal = (props) => {
         .then((response)=>{
             console.log(response)
             setlocalplaylists(response.data.playlists)
-            alert("Added to playlist!")
+            toast.success("Added to playlist!")
         },(error)=>{
-            alert("Error adding to playlist")
+            toast.error("Error adding to playlist")
             console.log('error from playlist api of adding video to certain playlist');
         })
         console.log('ADD video ',selectedvideo ,'to ',playlistobj);
