@@ -41,6 +41,7 @@ const  VideoListing = ({ videos })=> {
            
            {/* {videoItem.map((vid)=><VideoCard {...vid} key={vid._id}/>)} */}
            {videoItem.map((vid)=><VideoCard video = {vid} key={vid._id}/>)}
+           
        </div>
         </>
     )

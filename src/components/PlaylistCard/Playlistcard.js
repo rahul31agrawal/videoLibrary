@@ -1,7 +1,9 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { usePlaylist } from "../../context/PlaylistContext";
-import axios from 'axios'
+import axios from 'axios';
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import './playlistcard.css'
 
@@ -21,7 +23,7 @@ const Playlistcard = ({playlist}) => {
       .then((response)=>{
       console.log('response from delete playlist api',response);
       setlocalplaylists(response.data.playlists)
-      alert("Playlist deleted")
+      toast("Playlist deleted")
       },(error)=>{
       console.log("error from delete playlist api",error);
       })
@@ -40,6 +42,8 @@ const Playlistcard = ({playlist}) => {
       <div onClick={()=>deletePlaylist()} className="delete-playlist">
       <i class="fas fa-trash-alt"></i>
       </div>
+
+      
     </div>
   )
 }

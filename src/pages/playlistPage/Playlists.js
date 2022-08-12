@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { ToastContainer } from 'react-toastify';
 import Playlistcard from "../../components/PlaylistCard/Playlistcard";
 import {Navbar} from "../../components/navbar/nav";
 import { usePlaylist } from "../../context/PlaylistContext";
@@ -39,7 +39,7 @@ const Playlists = () => {
             {localplaylists.length === 0 ? null:localplaylists.map((playlist)=><div className='playlist-card-renderer'><Playlistcard playlist={playlist}/></div>)}
           </div>
         </div>
-    
+        <ToastContainer />
     </div>
   )
 }
