@@ -50,10 +50,12 @@ const VideoCard = ({ video }) => {
             {views}K Views | {hoursAgo} hours ago
           </h4>
 
+        </div>
+
           <div className="videoCardIcons">
             {likeState.likes.find((vid) => vid._id === _id) ? (
               <i
-                className="fas fa-thumbs-up fa-2x"
+                className="fas fa-thumbs-up fa-2x" 
                 onClick={() =>
                   likeDispatch({ type: "RemoveLike", payload: video })
                 }
@@ -95,10 +97,8 @@ const VideoCard = ({ video }) => {
             >
               <i className="far fa-list  fa-2x"></i>
             </div>
-
-            {/* <i class="far fa-alarm-plus fa-2x"></i> */}
           </div>
-        </div>
+        
       </div>
     </div>
   );

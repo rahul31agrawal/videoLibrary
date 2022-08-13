@@ -3,8 +3,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import {Navbar} from "../../components/navbar/nav";
 import VideoCardforPlaylist from "../../components/videocardforplaylist/VideoCardforPlaylist";
-
 import { usePlaylist } from '../../context/PlaylistContext';
+import { Sidebar } from "../../components/sideBar/sideBar";
 import './singleplaylist.css'
 
 
@@ -23,15 +23,22 @@ const SinglePlaylist = () => {
     console.log('what playlist are we showing: ',thisplaylist);
     
   return (
+    <>
+    <Navbar />
+
+    <div className="sidebarHolder">
+        <Sidebar />
+    </div>
+
     <div className='single-playlist-page-parent'>
-        <Navbar pagetype="not-home"/>
+        
          
       
         
         <div className="single-playlist-page-container">
             <div className='single-playlist-title-section'>
                 <div className='grid-title'>
-                 Playlist Detials
+                 Playlist Details
                 </div>
                 <div className="hr-div-long"></div> 
             </div>  
@@ -49,7 +56,7 @@ const SinglePlaylist = () => {
         <ToastContainer />
         
     </div>
-  )
+    </>)
 }
 
 export default SinglePlaylist

@@ -15,6 +15,11 @@
     
   
   }
+
+  .videoCardIcons{
+    display: flex;
+    justify-content: space-around;
+  }
   
   
   
@@ -32,4 +37,5 @@
   
   .far{
     cursor:pointer;
+    
   }

@@ -3,8 +3,7 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import {  toast } from 'react-toastify';
 import { usePlaylist } from "../../context/PlaylistContext";
-
-import './videocardforplaylist.css'
+import './videocardforplaylist.css';
 
 
 const VideoCardforPlaylist = ({vid,thisplaylist}) => {

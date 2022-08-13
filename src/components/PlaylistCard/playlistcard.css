@@ -1,8 +1,9 @@
 .playlist-main-card{
     display: flex;
     align-items: center;
-    gap: 2rem;
-    width: 300px;
+    gap: 1rem;
+    width: 160px;
+    height: 150px;
     justify-content: space-between;
     padding-bottom: 0.2rem;
     background-color: rgba(128, 128, 128,0.4);
@@ -14,7 +15,7 @@
 .playlist-card-title{
     font-size: 2rem;
     text-decoration: underline;
-    padding: 0.5rem;
+    padding: 0.2rem;
 
 }
 .playlist-card-title:hover{
@@ -31,10 +32,10 @@
     font-size: 2rem;
     color: white;
     background-color: black;
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 .delete-playlist{
-    padding: 1rem;
+    padding: .5rem;
     background-color: grey;
     border-radius: 1rem;
     display: flex;
