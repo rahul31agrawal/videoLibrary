@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
-
+import { ToastContainer } from 'react-toastify';
 import {Navbar} from "../../components/navbar/nav";
 import VideoCardforPlaylist from "../../components/videocardforplaylist/VideoCardforPlaylist";
 
@@ -46,6 +46,7 @@ const SinglePlaylist = () => {
              
         </div>
         
+        <ToastContainer />
         
     </div>
   )

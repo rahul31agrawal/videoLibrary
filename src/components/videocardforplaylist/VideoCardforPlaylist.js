@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
-
+import {  toast } from 'react-toastify';
 import { usePlaylist } from "../../context/PlaylistContext";
 
 import './videocardforplaylist.css'
@@ -12,7 +12,7 @@ const VideoCardforPlaylist = ({vid,thisplaylist}) => {
     const {setlocalplaylists}=usePlaylist();
     
     const youtubelink = "http://i.ytimg.com/vi/"+vid._id+"/maxresdefault.jpg"
-    var token = localStorage.getItem('token')
+    var token = localStorage.getItem('TOKEN')
     const header = {authorization: token} 
     console.log(thisplaylist);
     const urltosend="/api/user/playlists/"+thisplaylist._id+'/'+vid._id
@@ -23,7 +23,7 @@ const VideoCardforPlaylist = ({vid,thisplaylist}) => {
         
         setlocalplaylists(response.data.playlists)
         
-        alert('video removed from playlist')
+        toast.success('video removed from playlist')
         },(error)=>{
         console.log("error from remove video from playlist api",error);
         })

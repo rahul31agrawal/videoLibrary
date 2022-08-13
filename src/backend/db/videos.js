@@ -6,7 +6,7 @@
 export const videos = [
   {
     _id: "768q3fHdQjM",
-    title: "Sapna को Rohit Shetty के अंदर दिखते हैं Commissioner",
+    title: "Sapna को Rohit Shetty",
     description:
       "The Kapil Sharma Show",
     category: "comedy",
