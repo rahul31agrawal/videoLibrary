@@ -9,6 +9,9 @@ import {WatchLater} from "./pages/watchLater/watchLater";
 import {LoginPage} from "./pages/loginPage/login";
 import {SignupPage} from "./pages/signupPage/signupPage";
 import { RequiresAuth } from "./context/RequiresAuth";
+import Playlists from "./pages/playlistPage/Playlists";
+import SinglePlaylist from "./pages/singleplaylist/SinglePlaylist";
+
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
         <Route path="/Videos" element={<VideoListing/>} />
         
         <Route path="/watchVideo/:videoId" element={<WatchVideo/>} />
+
+        <Route path="/playlists" element={<Playlists />} />
+        <Route path="/singleplaylist/:id" element={<SinglePlaylist />} />
 
         <Route path="/history" element={
                   <RequiresAuth>

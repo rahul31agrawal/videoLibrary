@@ -1,45 +1,47 @@
-import {Navbar} from "../../components/navbar/nav";
-import {Sidebar} from "../../components/sideBar/sideBar";
-import {VideoCard} from "../../components/videoCard/videoCard";
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import { Navbar } from "../../components/navbar/nav";
+import { Sidebar } from "../../components/sideBar/sideBar";
+import { VideoCard } from "../../components/videoCard/videoCard";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { ToastContainer } from "react-toastify";
+import Modal from "../../components/playlistModal/Modal";
+import { usePlaylist } from "../../context/PlaylistContext";
 
-const  VideoListing = ({ videos })=> {
+const VideoListing = ({ videos }) => {
+  const [videoItem, setVideoItem] = useState([]);
+  const { modalshow, setmodalshow } = usePlaylist();
 
-    const [videoItem,setVideoItem] = useState([]);
-
-    useEffect(()=>{
-  
-  
-      axios.get('/api/videos')
-      .then((response)=>{
+  useEffect(() => {
+    axios.get("/api/videos").then(
+      (response) => {
         setVideoItem(response.data.videos);
-        
       },
-      (error)=>{
+      (error) => {
         console.log(error);
-    })
-    },[])
+      }
+    );
+  }, []);
 
+  return (
+    <>
+      <Navbar />
+      <div className="sidebarHolder">
+        <Sidebar />
+      </div>
 
-   
+      <div className="videoGrid">
+        {modalshow && (
+          <Modal closefunc={(modalshow) => setmodalshow(modalshow)} />
+        )}
 
-    return(
-        <>
-        <Navbar/>
-        <div className="sidebarHolder">
-        <Sidebar/>
-        </div>
-       
-       <div className="videoGrid">
-           
-           {/* {videoItem.map((vid)=><VideoCard {...vid} key={vid._id}/>)} */}
-           {videoItem.map((vid)=><VideoCard video = {vid} key={vid._id}/>)}
-       </div>
-        </>
-    )
+        {/* {videoItem.map((vid)=><VideoCard {...vid} key={vid._id}/>)} */}
+        {videoItem.map((vid) => (
+          <VideoCard video={vid} key={vid._id} />
+        ))}
+      </div>
+      <ToastContainer />
+    </>
+  );
+};
 
-
-}
-
-export {VideoListing}  ;
+export { VideoListing };

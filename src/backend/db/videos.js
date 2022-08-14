@@ -6,7 +6,7 @@
 export const videos = [
   {
     _id: "768q3fHdQjM",
-    title: "Sapna को Rohit Shetty के अंदर दिखते हैं Commissioner",
+    title: "Sapna talks to rohit shetty",
     description:
       "The Kapil Sharma Show",
     category: "comedy",
@@ -42,7 +42,7 @@ export const videos = [
   },
   {
     _id: "8aGhZQkoFbQ",
-    title: "What the heck is the event loop anyway?",
+    title: "What the heck is the event loop",
     description:
       "JS Conf",
     category: "Front end Development",
@@ -51,7 +51,7 @@ export const videos = [
   },
   {
     _id: "e-5obm1G_FY",
-    title: "Learning Functional Programming with JavaScript",
+    title: "Learning Functional Programming",
     description:
       "JS Conf",
     category: "Front end Development",
