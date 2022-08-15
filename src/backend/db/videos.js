@@ -36,7 +36,7 @@ export const videos = [
     title: "Preparing for a Frontend Interview",
     description:
       "Codevolution",
-    category: "Front end Development",
+    category: "Frontend Development",
     views:"7",
     hoursAgo:"6",  
   },
@@ -45,7 +45,7 @@ export const videos = [
     title: "What the heck is the event loop",
     description:
       "JS Conf",
-    category: "Front end Development",
+    category: "Frontend Development",
     views:"9",
     hoursAgo:"11",  
   },
@@ -54,7 +54,7 @@ export const videos = [
     title: "Learning Functional Programming",
     description:
       "JS Conf",
-    category: "Front end Development",
+    category: "Frontend Development",
     views:"1",
     hoursAgo:"12",  
   },
