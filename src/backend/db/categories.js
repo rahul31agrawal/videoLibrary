@@ -8,7 +8,7 @@ import { v4 as uuid } from "uuid";
 export const categories = [
   {
     _id: uuid(),
-    categoryName: "Comedy",
+    categoryName: "comedy",
     description:
       "It has comedy videos",
       views:6,
@@ -27,7 +27,7 @@ export const categories = [
   },
   {
     _id: uuid(),
-    categoryName: "Hollywood",
+    categoryName: "hollywood",
     description:
       "It has Hollywood movies",
       views:8,
@@ -36,7 +36,7 @@ export const categories = [
   },
   {
     _id: uuid(),
-    categoryName: "Bollywood",
+    categoryName: "bollywood",
     description:
       "It has bollywood movies",
       views:9,

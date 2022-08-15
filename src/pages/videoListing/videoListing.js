@@ -6,10 +6,15 @@ import axios from "axios";
 import { ToastContainer } from "react-toastify";
 import Modal from "../../components/playlistModal/Modal";
 import { usePlaylist } from "../../context/PlaylistContext";
+import { useVideo } from "../../context/VideoListingContext";
 
+import { getFinalFilteredProducts } from "../../utilities/FilterFuntion";
 const VideoListing = ({ videos }) => {
   const [videoItem, setVideoItem] = useState([]);
   const { modalshow, setmodalshow } = usePlaylist();
+
+
+  
 
   useEffect(() => {
     axios.get("/api/videos").then(
@@ -21,6 +26,11 @@ const VideoListing = ({ videos }) => {
       }
     );
   }, []);
+
+
+  const {state}=useVideo();
+  const {Showcategory}=state;
+  const FinalFilteredProducts=getFinalFilteredProducts(videoItem,Showcategory)
 
   return (
     <>
@@ -35,7 +45,7 @@ const VideoListing = ({ videos }) => {
         )}
 
         {/* {videoItem.map((vid)=><VideoCard {...vid} key={vid._id}/>)} */}
-        {videoItem.map((vid) => (
+        {FinalFilteredProducts.map((vid) => (
           <VideoCard video={vid} key={vid._id} />
         ))}
       </div>
