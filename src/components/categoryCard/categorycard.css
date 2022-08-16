@@ -10,22 +10,9 @@
     
   }
   
-  .videoDetails{
-    display: flex;
-    margin-top:-2rem;
-    margin-left: 1rem;
-  }
+ 
   
-  .watchNowBtn{
-    height:2rem;
-    width:18rem;
-    
-  }
-
-  .watchNowBtn:hover{
-    background-color: grey;
-    cursor: pointer;
-  }
+  
   
   .categoryName{
     margin-top:.5rem;

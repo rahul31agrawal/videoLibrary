@@ -7,7 +7,6 @@ import { ToastContainer } from "react-toastify";
 import Modal from "../../components/playlistModal/Modal";
 import { usePlaylist } from "../../context/PlaylistContext";
 import { useVideo } from "../../context/VideoListingContext";
-
 import { getFinalFilteredProducts } from "../../utilities/FilterFuntion";
 const VideoListing = ({ videos }) => {
   const [videoItem, setVideoItem] = useState([]);

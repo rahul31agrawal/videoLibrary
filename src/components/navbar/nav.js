@@ -26,7 +26,7 @@ const Navbar = () => {
     return(
         <div className = "navContainer">
 
-        <h1 className="logoName">Neogcamp Video library</h1>
+        <h1 className="logoName">ViewwTube</h1>
 
         <div className="searchBarContainer">
             <input className="SearchBar" placeholder="search Videos"></input>
