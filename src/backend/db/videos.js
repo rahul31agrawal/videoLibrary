@@ -85,4 +85,33 @@ export const videos = [
     views:"1",
     hoursAgo:"12",  
   },
+
+  {
+    _id: "R6savS7m0Fg",
+    title: "Laal singh Chaddha",
+    description:
+      "Viacom studios ",
+    category: "bollywood",
+    views:"5",
+    hoursAgo:"4",  
+  },
+
+  {
+    _id: "ye3faphq3MU",
+    title: "Raksha Bandhan",
+    description:
+      "Zee studios ",
+    category: "bollywood",
+    views:"6",
+    hoursAgo:"9",  
+  },
+  {
+    _id: "e2eaXjb7LQ8",
+    title: "3 Idiots",
+    description:
+      "Zee studios ",
+    category: "bollywood",
+    views:"4",
+    hoursAgo:"8",  
+  },
 ];
