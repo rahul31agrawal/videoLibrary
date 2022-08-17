@@ -1,10 +1,9 @@
-
-
-
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import { useAuthContext } from "../../context/authContext";
+
+import "./signupPage.css";
 
 const SignupPage = () =>{
 
@@ -74,8 +73,8 @@ const SignupPage = () =>{
                       <h1 className="login-heading">Create Account</h1>
 
                       <div>
-                        <label className = "label-position" htmlFor="email-id"> Name</label>
-                         <input className="user-input" type="text" name="" id="email-id" placeholder="Name Surname"
+                        <label className = "label-position-name" htmlFor="email-id"> Name</label>
+                         <input className="user-input-name" type="text" name="" id="email-id" placeholder="Name Surname"
                          onChange={(e) => {
                           setSignupInput((item) => ({
                             ...item,
@@ -86,8 +85,8 @@ const SignupPage = () =>{
                       </div>
 
                       <div>
-                        <label className = "label-position" htmlFor="email-id">Email address</label>
-                         <input className="user-input" type="email" name="" id="email-id" placeholder="enter your email"
+                        <label className = "label-position-email" htmlFor="email-id">Email address</label>
+                         <input className="user-input-email" type="email" name="" id="email-id" placeholder="enter your email"
                          onChange={(e) => {
                           setSignupInput((item) => ({
                             ...item,
@@ -99,7 +98,7 @@ const SignupPage = () =>{
                      
                      <div>
                      <label  className = "label-position" htmlFor="user-password">Password</label>
-                     <input className="user-input" type={showPassword.passwordOne ? "text" : "password"} 
+                     <input className="user-input-password" type={showPassword.passwordOne ? "text" : "password"} 
                      name="" 
                      id="user-password" placeholder="enter password"
                      onChange={(e) => {
@@ -133,7 +132,7 @@ const SignupPage = () =>{
 
                      <div>
                      <label  className = "label-position" htmlFor="user-password">Confirm Password</label>
-                     <input className="user-input" type={showPassword.passwordTwo ? "text" : "password"} 
+                     <input className="user-input-cnfrmpass" type={showPassword.passwordTwo ? "text" : "password"} 
                      name="" id="user-password" placeholder="Confirm password"
                      onChange={(e) => {
                       setSignupInput((item) => ({

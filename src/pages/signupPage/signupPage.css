@@ -1,0 +1,25 @@
+.user-input-name{
+    margin-left: 4.5rem;
+}
+
+.user-input-password{
+    margin-left: 3.4rem;
+}
+
+.user-input-cnfrmpass{
+    margin-left: -.5rem;
+}
+
+.label-position-name{
+    margin-right: 2rem;
+    font-weight: bold;
+}
+
+.label-position-email{
+    margin-right: 2.8rem;
+    font-weight: bold;
+}
+
+.form-content > *{
+    margin: 10px 0;
+}
