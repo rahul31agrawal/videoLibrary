@@ -14,19 +14,19 @@ export const videos = [
     hoursAgo:"2",
   },
   {
-    _id: "UFTc0wl26TY",
-    title: "Chappu Tries To Get A Girlfriend",
+    _id: "KHvfdKyw2I8",
+    title: "Bhagam Bhag | Best Comedy Scenes",
     description:
-      "The Kapil Sharma Show",
+      "Bhagam Bhag movie",
     category: "comedy",
     views:"3",
     hoursAgo:"2",
   },
   {
-    _id: "SExgUJU9_-Q",
-    title: "Dr. Gulati Reads Chandu's Palm",
+    _id: "EMEkMyXAIhg",
+    title: "Dhamaal | Superhit Comedy Movie  | Superhit Comedy Movie ",
     description:
-      "The Kapil Sharma Show",
+      "Dhamaal Movie ",
     category: "comedy",
     views:"4",
     hoursAgo:"2", 
@@ -59,10 +59,10 @@ export const videos = [
     hoursAgo:"12",  
   },
   {
-    _id: "qTZ7nxzlPjE",
-    title: "JURASSIC GALAXY Full Movie HD",
+    _id: "M_cSFBST1-A",
+    title: "SPIDER-MAN 4: HOME RUN - TRAILER ",
     description:
-      "New Hollywood Hindi Sci-Fi Adventure Movie - Ryan",
+      "Marvel Studios & Sony Pictures | Tom Holland, Tobey Maguire | HD",
     category: "hollywood",
     views:"1",
     hoursAgo:"12",  
