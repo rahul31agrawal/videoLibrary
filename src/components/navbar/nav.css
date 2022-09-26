@@ -14,11 +14,13 @@
 }
 
 .loginBtn{
-    margin:1.5rem 1rem 1.5rem;
+    /* margin:1.5rem 1rem 1.5rem; */
+    margin: auto;
     border-radius: .5rem;
     height: 2rem;
     width:5rem;
     background-color: aliceblue;
+    text-decoration: none;
 }
 
 .searchBarContainer{
