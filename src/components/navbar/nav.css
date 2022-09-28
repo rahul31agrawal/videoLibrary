@@ -14,8 +14,7 @@
 }
 
 .loginBtn{
-    /* margin:1.5rem 1rem 1.5rem; */
-    margin: auto;
+    margin:1.5rem 1rem 1.5rem;
     border-radius: .5rem;
     height: 2rem;
     width:5rem;
