@@ -27,13 +27,13 @@ const VideoCardforPlaylist = ({vid,thisplaylist}) => {
         console.log("error from remove video from playlist api",error);
         })
     }
-    const goToVideo =(vid)=>{
-        const urltonavigateto = '/singlevideo/' + vid
-        navigate(urltonavigateto)
-    }
+
+    
+
     return (
         <div className='video-card-for-playlist-parent'>
-            <div onClick={()=>goToVideo(vid._id)} className="thumbnail">
+            <div  className="thumbnail" onClick={() => { navigate(`/watchVideo/${vid._id}`)}}
+>
                 <img src={youtubelink} alt={vid.title} />
             </div>
             <div className="video-details-for-playlist">
