@@ -20,6 +20,7 @@
     width:5rem;
     background-color: aliceblue;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .searchBarContainer{
